@@ -1,10 +1,10 @@
 <p align="center"><img width="100"src="https://img2.pngio.com/nodejs-javascript-web-application-expressjs-computer-software-node-png-820_820.jpg"></p>
 
-<h1 align="center"><strong>Express MySQL Boilerplate</strong></h1>
+<h1 align="center"><strong>Frndly Backend</strong></h1>
 
 <div align="center">
 	<strong>
-		A basic backend application template build with express and mysql
+		A backend app for Frndly built with Express
 	</strong>
 </div>
 
@@ -40,8 +40,8 @@
 
 ``` bash
 # clone the project
-git clone https://github.com/deepak-terse/express-mysql-boilerplate.git
-cd react-boilerplate
+git clone https://github.com/deepak-terse/frndly-backend.git
+cd frndly-backend
 
 # install dependencies
 npm install
@@ -54,7 +54,6 @@ npm run start
 ## Dependencies
 
 * express
-* dotenv
 * cors
 * typescript
 
