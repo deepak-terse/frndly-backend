@@ -16,7 +16,10 @@
     "scripts": {
         "build": "tsc",
         "prestart": "npm run build",
-        "start": "ts-node src/index.ts"
+        "start": "ts-node src/index.ts",
+        "migrationUp": "ts-node ./node_modules/typeorm/cli.js migration:run",
+        "migrationDown": "ts-node ./node_modules/typeorm/cli.js migration:revert"
+
     },
     "dependencies": {
         "cors": "^2.8.5",
