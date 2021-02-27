@@ -1,7 +1,7 @@
 {
-    "name": "express-mysql-boilerplate",
+    "name": "frndly-backend",
     "version": "0.1.0",
-    "description": "A basic backend application template build with express and mysql",
+    "description": "A backend app for Frndly built with Express",
     "private": true,
     "repository": {
         "type": "git",
