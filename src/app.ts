@@ -3,7 +3,7 @@ import { Request, Response} from "express";
 import express from "express";
 import cors from 'cors';
 import bodyParser = require('body-parser');
-import {AppRoutes} from "./routes";
+import {AppRoutes} from "./config/routes";
 import dotenv from "dotenv";
 
 createConnection().then(async connection => {
