@@ -36,19 +36,61 @@
 * npm
 
 
-## Build Setup
+## Initial Setup
 
 ``` bash
-# clone the project
+# Clone the project
 git clone https://github.com/deepak-terse/frndly-backend.git
 cd frndly-backend
 
-# install dependencies
+# Install dependencies
 npm install
 
-# Run the server at localhost:8080
+# Create mysql database for storing the data
+
+# Create .env file in the root directory with the following configuration
+
+# Run the below command to create tables as per the entities specified in the code
+npm run start
+
+# Run the migrations for seeding the database
+npm run migrationUp
+```
+
+
+### Sample env configuration
+``` bash 
+# Database configuration
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=username
+DB_PASS=password
+DB_NAME=frndly
+
+# Server configuration
+SERVER_HOST=localhost
+SERVER_PORT=5000
+```
+
+
+## Running the application
+``` bash
 npm run start
 ```
+
+
+## Working with migrations
+``` bash
+# To migrate the db up
+npm run migrationUp
+
+# To migrate the db down
+npm run migrationDown
+```
+
+
+## API Documentation
+[Postman Documentation](https://documenter.getpostman.com/view/984661/TWDcGvLf)
 
 
 ## Dependencies
@@ -56,10 +98,14 @@ npm run start
 * express
 * cors
 * typescript
+* mysql
+* typeorm
+* dotenv
 
 
 ## References
 * https://developer.okta.com/blog/2018/11/15/node-express-typescript
+
 
 ## Licence
 
