@@ -4,8 +4,11 @@ import express from "express";
 import cors from 'cors';
 import bodyParser = require('body-parser');
 import {AppRoutes} from "./routes";
+import dotenv from "dotenv";
 
 createConnection().then(async connection => {
+
+    dotenv.config();
 
     // create express app
     const app : any = express();
@@ -22,7 +25,7 @@ createConnection().then(async connection => {
     });
 
     // run app
-    app.listen(3000);
+    app.listen(process.env.SERVER_PORT);
 
     console.log("Express application is up and running on port 3000");
 
