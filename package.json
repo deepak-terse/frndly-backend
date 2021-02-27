@@ -5,27 +5,25 @@
     "private": true,
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/deepak-terse/express-mysql-boilerplate.git"
+        "url": "git+https://github.com/deepak-terse/frndly-backend.git"
     },
     "author": "Deepak Terse",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/deepak-terse/express-mysql-boilerplate/issues"
+        "url": "https://github.com/deepak-terse/frndly-backend/issues"
     },
     "main": "dist/index.js",
     "scripts": {
         "build": "tsc",
         "prestart": "npm run build",
-        "start": "ts-node src/index.ts",
+        "start": "ts-node src/app.ts",
         "migrationUp": "ts-node ./node_modules/typeorm/cli.js migration:run",
         "migrationDown": "ts-node ./node_modules/typeorm/cli.js migration:revert"
-
     },
     "dependencies": {
         "cors": "^2.8.5",
         "express": "^4.17.1",
         "mysql": "^2.18.1",
-        "reflect-metadata": "^0.1.13",
         "ts-node": "^9.1.1",
         "typeorm": "^0.2.31"
     },

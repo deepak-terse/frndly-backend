@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import { UserRelation } from "../entity/UserRelation";
 import { getManager, In } from "typeorm";
 import { User } from "../entity/User";
 

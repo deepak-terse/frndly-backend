@@ -6,7 +6,7 @@ export class User {
     @PrimaryGeneratedColumn('uuid')
     id: string;
 
-    @Column('varchar', {default: 'https://www.pngitem.com/pimgs/m/256-2560275_avatar-icon-red-png-clipart-png-download-red.png'})
+    @Column('varchar', {default: 'https://www.w3schools.com/howto/img_avatar.png'})
     avatar: string;
 
     @Column("varchar", { length: 20 })

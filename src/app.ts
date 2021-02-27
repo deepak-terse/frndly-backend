@@ -1,6 +1,5 @@
-import "reflect-metadata";
 import {createConnection} from "typeorm";
-import {Request, Response} from "express";
+import { Request, Response} from "express";
 import express from "express";
 import cors from 'cors';
 import bodyParser = require('body-parser');
