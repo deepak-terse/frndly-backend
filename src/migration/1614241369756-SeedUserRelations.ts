@@ -14,11 +14,13 @@ export class SeedUserRelations1614241369756 implements MigrationInterface {
 
             if(randomUser1 != randomUser2){
                 userRelationSeed.push({
-                    requesterId: randomUser1,
-                    addresseeId: randomUser2
+                    requester: randomUser1,
+                    addressee: randomUser2
                 });
             }
         }
+
+        console.log(userRelationSeed);
 
         await getRepository("UserRelation").save(userRelationSeed)
             .catch(error => console.log("Error while saving User Relations", error));;
