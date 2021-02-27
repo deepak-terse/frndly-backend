@@ -1,15 +1,16 @@
-import {Entity, Unique, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn} from "typeorm";
+import {Entity, OneToOne, JoinColumn, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn} from "typeorm";
+import {User} from './User';
 
 @Entity()
 export class UserRelation {
     @PrimaryGeneratedColumn('uuid')
     id: string;
 
-    @Column()
-    requesterId: string;
+    @OneToOne(type => User) @JoinColumn() 
+    requesterId: User;
 
-    @Column()
-    addresseeId: string;
+    @OneToOne(type => User) @JoinColumn() 
+    addresseeId: User;
 
     @CreateDateColumn()
     createdDate: Date;
