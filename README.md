@@ -35,6 +35,7 @@
 * Node
 * npm
 
+<br>
 
 ## Initial Setup
 
@@ -57,6 +58,7 @@ npm run start
 npm run migrationUp
 ```
 
+<br>
 
 ### Sample env configuration
 ``` bash 
@@ -72,12 +74,14 @@ SERVER_HOST=localhost
 SERVER_PORT=5000
 ```
 
+<br>
 
 ## Running the application
 ``` bash
 npm run start
 ```
 
+<br>
 
 ## Working with migrations
 ``` bash
@@ -88,10 +92,14 @@ npm run migrationUp
 npm run migrationDown
 ```
 
+<br>
 
-## API Documentation
-[Postman Documentation](https://documenter.getpostman.com/view/984661/TWDcGvLf)
+## Documentation
+- [API Documentation](https://documenter.getpostman.com/view/984661/TWDcGvLf)
 
+- [DB Schema](https://github.com/deepak-terse/frndly-backend/blob/main/docs/DB%20Schema.png)
+
+<br>
 
 ## Dependencies
 
@@ -102,10 +110,12 @@ npm run migrationDown
 * typeorm
 * dotenv
 
+<br>
 
 ## References
 * https://developer.okta.com/blog/2018/11/15/node-express-typescript
 
+<br>
 
 ## Licence
 
