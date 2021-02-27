@@ -50,6 +50,10 @@ npm install
 
 # create .env file in the root directory with the following configuration
 
+# create tables
+# Running the below command will create tables as per the entities specified in the code
+npm run start
+
 # run the migrations for seeding the database
 npm run migrationUp
 ```
