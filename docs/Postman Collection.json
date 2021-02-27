@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "b8ca8b47-fd8e-4e8b-b385-a7ad13029a68",
+		"name": "Frndly",
+		"description": "This document describes the API that have been used for this project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/getUsers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"take\": 5,\r\n    \"skip\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/getUsers",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getUsers"
+					]
+				},
+				"description": "# Get All Users\nUse this endpoint to get all records from the <b>User</b> table\n\n## Accepted Parameters:\n- <b>take</b>: It specifies the number of records to fetch\n- <b>skip</b>: It specifies the number of records to skip\n\n## Response:\n- <b>data</b>: It returns the requested data in the following keys\n    - <b>result</b>: Requested users data in an array\n    - <b>count</b>: Total count of the records which matches the specified filters\n- <b>statusCode</b>: It returns the server status code\n- <b>message</b>: It returns the response message which describes the status of the operation"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/getUserFriends",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"0328ab48-3c2a-44cc-a857-61bb2c7d04b6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/getUserFriends",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getUserFriends"
+					]
+				},
+				"description": "# Get Selected Users Friend\nUse this endpoint to get records from the <b>User</b> table which are a friend of the specified User.\n\n## Accepted Parameters:\n- <b>userId</b>: It specifies the user id of the user for which you want to fetch the list of friends. \n\n<b>Note:</b> For testing purpose, we have used the id '0328ab48-3c2a-44cc-a857-61bb2c7d04b6' from the seed data. You will have to use the id as per your seed data. \n\n## Response:\n- <b>data</b>: It returns the requested data in the following keys\n    - <b>result</b>: Requested users data in an array\n    - <b>count</b>: Total count of the records which matches the specified filters\n- <b>statusCode</b>: It returns the server status code\n- <b>message</b>: It returns the response message which describes the status of the operation"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/getUserMutualFriends",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"0328ab48-3c2a-44cc-a857-61bb2c7d04b6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/getUserMutualFriends",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"getUserMutualFriends"
+					]
+				},
+				"description": "# Get Selected Users Mutual Friend\nUse this endpoint to get records from the <b>User</b> table which are mutual friends of the specified User.\n\n\n## Accepted Parameters:\n- <b>userId</b>: It specifies the user id of the user for which you wants to  to fetch the list of mutual friends.\n\n<b>Note:</b> For testing purpose, we have used the id '0328ab48-3c2a-44cc-a857-61bb2c7d04b6' from the seed data. You will have to use the id as per your seed data. \n\n\n## Response:\n- <b>data</b>: It returns the requested data in the following keys\n    - <b>result</b>: Requested users data in an array\n    - <b>count</b>: Total count of the records which matches the specified filters\n- <b>statusCode</b>: It returns the server status code\n- <b>message</b>: It returns the response message which describes the status of the operation"
+			},
+			"response": []
+		}
+	]
+}
