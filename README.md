@@ -49,7 +49,11 @@ npm install
 # create mysql database for storing the data
 
 # create .env file in the root directory with the following configuration
+
+# run the migrations for seeding the database
+npm run migrationUp
 ```
+
 
 ### Sample env configuration
 ``` bash 
@@ -65,10 +69,12 @@ SERVER_HOST=localhost
 SERVER_PORT=5000
 ```
 
+
 ## Running the application
 ``` bash
 npm run start
 ```
+
 
 ## Working with migrations
 ``` bash
@@ -79,8 +85,10 @@ npm run migrationUp
 npm run migrationDown
 ```
 
+
 ## API Documentation
 [Postman Documentation](https://documenter.getpostman.com/view/984661/TWDcGvLf)
+
 
 ## Dependencies
 
@@ -94,6 +102,7 @@ npm run migrationDown
 
 ## References
 * https://developer.okta.com/blog/2018/11/15/node-express-typescript
+
 
 ## Licence
 
