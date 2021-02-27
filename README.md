@@ -39,21 +39,21 @@
 ## Initial Setup
 
 ``` bash
-# clone the project
+# Clone the project
 git clone https://github.com/deepak-terse/frndly-backend.git
 cd frndly-backend
 
-# install dependencies
+# Install dependencies
 npm install
 
-# create mysql database for storing the data
+# Create mysql database for storing the data
 
-# create .env file in the root directory with the following configuration
+# Create .env file in the root directory with the following configuration
 
-# Running the below command will create tables as per the entities specified in the code
+# Run the below command to create tables as per the entities specified in the code
 npm run start
 
-# run the migrations for seeding the database
+# Run the migrations for seeding the database
 npm run migrationUp
 ```
 
